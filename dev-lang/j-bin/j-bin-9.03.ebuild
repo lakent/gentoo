@@ -36,7 +36,7 @@ src_install() {
     echo "cd ~ && /usr/bin/ijconsole \"$@\"" >>ijconsole.sh
     dobin ijconsole.sh
     newbin bin/jconsole ijconsole-${PV}
-    dosym /usr/bin/ijconsole-${PV} /usr/bin/ijconsole
+    dosym ijconsole-${PV} /usr/bin/ijconsole
 
     newlib.so bin/libj.so "libj.so.${PV}"
 
