@@ -32,11 +32,10 @@ src_install() {
     insinto "/etc/${MY_PN}/${PV}/"
     doins bin/{profile.ijs,profilex_template.ijs}
 
-    exeinto "/usr/bin/"
     echo "#!/bin/bash" >ijconsole.sh
     echo "cd ~ && /usr/bin/ijconsole \"$@\"" >>ijconsole.sh
-    doexe ijconsole.sh
-    newexe bin/jconsole ijconsole-${PV}
+    dobin ijconsole.sh
+    newbin bin/jconsole ijconsole-${PV}
     dosym /usr/bin/ijconsole-${PV} /usr/bin/ijconsole
 
     newlib.so bin/libj.so "libj.so.${PV}"
