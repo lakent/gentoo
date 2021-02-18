@@ -19,12 +19,6 @@ BDEPEND=""
 
 S="${WORKDIR}/${MY_P}"
 
-src_prepare() {
-    eapply "${FILESDIR}/${P}-version.patch"
-    eapply "${FILESDIR}/${P}-pacman.patch"
-    eapply_user
-}
-
 src_install() {
     insinto /usr/share/${MY_PN}/${PV}/
     doins -r {system,bin/icons,addons}
