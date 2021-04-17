@@ -1,4 +1,8 @@
+# Copyright 1990-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v3
+
 EAPI=7
+
 
 MY_PN="${PN%-bin}"
 MY_PV=$(ver_rs 1 '')
