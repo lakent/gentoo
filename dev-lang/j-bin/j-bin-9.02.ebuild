@@ -14,7 +14,7 @@ SRC_URI="http://www.jsoftware.com/download/${MY_P}/install/${MY_P}_linux64.tar.g
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86 ~arm ~arm64"
+KEYWORDS="amd64 x86 arm arm64"
 IUSE=""
 
 DEPEND=""
